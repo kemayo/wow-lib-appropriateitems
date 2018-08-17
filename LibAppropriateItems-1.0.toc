@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 80000
 ## Title: Lib: AppropriateItems-1.0
 ## Notes: What items are appropriate for a given class
 ## Author: Kemayo
@@ -8,7 +8,7 @@
 ## X-License: BSD
 
 #@no-lib-strip@
-lib\LibStub\LibStub.lua
+embeds.xml
 #@end-no-lib-strip@
 
 lib.xml
