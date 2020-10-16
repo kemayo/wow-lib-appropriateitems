@@ -149,7 +149,6 @@ valid_classes = {
             [LE_ITEM_WEAPON_WARGLAIVE] = true,
             [LE_ITEM_WEAPON_UNARMED] = true,
             [LE_ITEM_WEAPON_AXE1H] = true,
-            [LE_ITEM_WEAPON_MACE1H] = true,
             [LE_ITEM_WEAPON_SWORD1H] = true,
         },
         [LE_ITEM_CLASS_ARMOR] = {
