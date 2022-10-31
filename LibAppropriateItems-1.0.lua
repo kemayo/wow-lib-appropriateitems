@@ -235,4 +235,22 @@ valid_classes = {
             [Enum.ItemArmorSubclass.Cloth] = true,
         },
     },
+    EVOKER = {
+        [Enum.ItemClass.Weapon] = {
+            [Enum.ItemWeaponSubclass.Dagger] = true,
+            [Enum.ItemWeaponSubclass.Unarmed] = true,
+            [Enum.ItemWeaponSubclass.Axe1H] = true,
+            [Enum.ItemWeaponSubclass.Mace1H] = true,
+            [Enum.ItemWeaponSubclass.Sword1H] = true,
+            [Enum.ItemWeaponSubclass.Axe2H] = true,
+            [Enum.ItemWeaponSubclass.Mace2H] = true,
+            [Enum.ItemWeaponSubclass.Sword2H] = true,
+            [Enum.ItemWeaponSubclass.Staff] = true,
+        },
+        [Enum.ItemClass.Armor] = {
+            [Enum.ItemArmorSubclass.Mail] = true,
+            [Enum.ItemArmorSubclass.Leather] = false,
+            [Enum.ItemArmorSubclass.Cloth] = false,
+        },
+    },
 }
