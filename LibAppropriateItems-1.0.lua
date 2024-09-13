@@ -1,7 +1,7 @@
-local lib, oldMinor = LibStub:NewLibrary("LibAppropriateItems-1.0", 2)
+local lib, oldMinor = LibStub:NewLibrary("LibAppropriateItems-1.0", 3)
 if not lib then return end
 
-local _, playerclass = UnitClass("player")
+local playerclass, playerclassid = UnitClassBase("player")
 local valid_classes
 
 -- Can the player equip this at all?
@@ -17,6 +17,10 @@ function lib:IsAppropriate(item, class)
     if slot == 'INVTYPE_CLOAK' then
         -- Cloaks are cloth, technically. But everyone can wear them.
         return true
+    end
+    if type(class) == "number" then
+        local info = C_CreatureInfo.GetClassInfo(class)
+        class = info and info.classFile
     end
     if not (class and valid_classes[class] and itemclass and itemsubclass) then
         return
